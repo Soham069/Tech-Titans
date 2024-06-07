@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('insaan.jpg'); background-size: cover;">
+
+    <div class="sidebar">
+        <h1>Tech Titans</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:7860/">Video Deepfake Detection </a></li>
+                <li><a href="voice.html">Voice Analysis</a></li>
+                <li><a href="contact.html">Image Detection</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+     <div><h1>Deep Detection</h1> </div>
+        <br>
+        <br>
+        <p>The website provides a comprehensive suite of tools for detecting voice manipulation, deepfake images, and deepfake videos. Utilizing advanced algorithms and machine learning techniques, it analyzes audio and visual content for anomalies, inconsistencies, and artifacts characteristic of manipulated media. Users can upload files for analysis and receive detailed reports outlining the likelihood of manipulation, enabling them to identify and mitigate the spread of deceptive content online.</p>
+    </div>
+
+    <style>
+        /* Sidebar styles */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            border-bottom: 20mm;
+            height: 100%;
+            background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent black background */
+            color: #fff;
+            padding: 20px;
+            z-index: 1; /* Ensure sidebar stays behind content */
+        }
+
+        .sidebar h1 {
+            margin-bottom: 20px;
+            border-bottom: 20px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 1px solid #666;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #666;
+        }
+
+        /* Content styles */
+        .content {
+            margin-left: 200px; /* Adjusted to account for the sidebar width */
+            padding: 20px;
+            font-size: 20px;
+            color: #fff; /* Set text color for content */
+            z-index: 2; /* Ensure content stays on top of sidebar */
+            position: relative; /* Ensure z-index works properly */
+           width:410px;
+           height:140px;
+        }
+       
+     
+    </style>
+</body>
+</html>
